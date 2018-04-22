@@ -1,0 +1,12 @@
+.container-fluid {
+    max-width: 1024px;
+}
+
+.fa-toggle-off {
+    float: left;
+    font-size: 3.6em;
+}
+
+nav.in {
+    clear: both;
+}
