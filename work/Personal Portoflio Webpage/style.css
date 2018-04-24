@@ -1,3 +1,7 @@
+body {
+    background-color: #ccc;
+}
+
 .container-fluid {
     max-width: 1024px;
 }
@@ -7,6 +11,23 @@
     font-size: 3.6em;
 }
 
-nav.in {
-    clear: both;
+.navbar-header > a {
+    color: #888;
+}
+
+main {
+    margin-top: 60px;
+}
+
+
+.intro-text {
+    margin-top: 80px;
+}
+
+.intro-text span {
+    font-size: 2em;
+}
+
+.intro-text img {
+    width: 50px;
 }
