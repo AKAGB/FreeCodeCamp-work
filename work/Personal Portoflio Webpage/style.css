@@ -17,17 +17,48 @@ body {
 
 main {
     margin-top: 60px;
+    max-width: 1024px;
+    font-size: large;
 }
 
+main header {
+    max-width: 100%;
+    width: 100%;
+}
 
-.intro-text {
-    margin-top: 80px;
+.intro-text p {
+    border-bottom: 2px black solid;
+    padding-bottom: 15px;
 }
 
 .intro-text span {
     font-size: 2em;
 }
 
-.intro-text img {
-    width: 50px;
+/*使header部分垂直居中*/
+@media screen and (min-width: 800px) {
+    .header-center {
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        flex-flow: row;
+    }
+    .intro-text {
+        flex: 2;
+    }
+    .imgbox {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro-text {
+        max-width: inherit;
+        width: 100%;
+    }
+}
+
+#portoflio {
+    background-color: black;
+    color: white;
 }
