@@ -71,7 +71,9 @@ main {
 
         .works {
             display: inline-block;
+            max-width: 40%;
             width: 40%;
+            margin: 10px;
         }
 
 /*
