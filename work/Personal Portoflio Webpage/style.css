@@ -2,6 +2,10 @@ body {
     background-color: #ccc;
 }
 
+/*
+ * 导航栏部分
+ */
+
 .container-fluid {
     max-width: 1024px;
 }
@@ -15,40 +19,84 @@ body {
     color: #888;
 }
 
+/*
+ * main 主体部分
+ */
 main {
+    padding: 0 !important;
     margin-top: 60px;
     max-width: 1024px;
     font-size: large;
 }
 
-main header {
-    max-width: 100%;
-    width: 100%;
-}
+    main hr {
+        margin-top: 0;
+    }
 
-.intro-text p {
-    border-bottom: 2px black solid;
-    padding-bottom: 15px;
-}
+    h2 {
+        line-height: 2;
+        font-size: 3em;
+    }
 
-.intro-text span {
-    font-size: 2em;
-}
+    main .panel {
+        border: none;
+    }
+
+    /*
+     * main header部分
+     */
+
+    main header {
+        max-width: 80%;
+        padding: 5% 0;
+    }
+
+        .intro-text p {
+            border-bottom: 2px black solid;
+            padding-bottom: 15px;
+        }
+
+        .intro-text span {
+            font-size: 2em;
+        }
+
+    /*
+     * main portoflio部分
+     */
+
+    #portoflio {
+        background-color: purple;
+        color: white;
+    }
+
+        .works {
+            display: inline-block;
+            width: 40%;
+        }
+
+/*
+ * 响应式设计
+ */
 
 /*使header部分垂直居中*/
 @media screen and (min-width: 800px) {
+    /* main header内容垂直居中和布局*/
     .header-center {
         display: flex;
         display: -webkit-flex;
         align-items: center;
         flex-flow: row;
     }
+
     .intro-text {
         flex: 2;
     }
+
     .imgbox {
         flex: 1;
     }
+    /*main header 部分结束*/
+
 }
 
 @media screen and (max-width: 800px) {
@@ -56,9 +104,14 @@ main header {
         max-width: inherit;
         width: 100%;
     }
-}
 
-#portoflio {
-    background-color: black;
-    color: white;
+    /*h2 标题字体设置*/
+    h2 {
+        font-size: 2em;
+    }
+
+    .works {
+        display: block;
+        width: inherit;
+    }
 }
