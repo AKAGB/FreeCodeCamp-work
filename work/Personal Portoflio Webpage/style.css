@@ -26,7 +26,7 @@ main {
     padding: 0 !important;
     margin-top: 60px;
     max-width: 1024px;
-    font-size: large;
+    font-size: 1.5em;
 }
 
     main hr {
@@ -71,11 +71,16 @@ main {
 
         .works {
             display: inline-block;
-            max-width: 40%;
+            max-width: 50%;
             width: 40%;
-            margin: 10px;
+            margin: 10px auto;
+            font-size: 1.4em;
+            color: white;
         }
 
+            .works img {
+                width: 100%;
+            }
 /*
  * 响应式设计
  */
