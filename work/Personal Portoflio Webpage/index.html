@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <a id="top"></a>
         <header class="navbar navbar-default navbar-fixed-top navbar-inverse">
-            <div class="container-fluid">
+            <div class="container-fluid max-w-1024">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#nav-bar" aria-expanded="false">
@@ -27,11 +28,11 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                    <a href="#" title="AKAGB's Home"><i class="fa fa-toggle-off"></i></a>
+                    <a id="icon" href="#top" title="AKAGB's Home"><i class="fa fa-toggle-off"></i></a>
                 </div>
                 <nav class="collapse navbar-collapse" id="nav-bar" role="navigation">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a class="scrollable" href="#top">HOME</a></li>
+                        <li class="active"><a id="rhome" class="scrollable" href="#top">HOME</a></li>
                         <li><a href="#portoflio">PORTOFLIO</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
@@ -39,9 +40,9 @@
             </div>
         </header>
         <main class="container">
-            <div class="panel">
+            <div class="panel text-center">
                 <!-- 个人介绍部分 -->
-                <header class="container header-center text-center">
+                <header class="container header-center">
                     <div class="intro-text center-block">
                         <p>
                             SYSU SDCS student<br>
@@ -56,7 +57,8 @@
                     </div>
                 </header>
                 <!-- 个人介绍结束 -->
-                <section class="text-center" id="portoflio">
+                <!-- 作品部分 -->
+                <section id="portoflio">
                     <h2>PORTOFLIO</h2>
                     <hr>
                     <div class="works center-block">
@@ -84,7 +86,70 @@
                         <div class="caption">Puzzle Game</div>
                     </div>
                 </section>
+                <!-- 作品部分结束 -->
+                <!-- 联系表单 -->
+                <section id="contact">
+                    <h2>CONTACT ME</h2>
+                    <hr>
+                    <form action="" role="form" class="form-horizontal">
+                        <div class="box">
+                            <div class="form-group">
+                                <label for="name" class="col-sm-3 control-label">Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="name" placeholder="AKAGB">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label">Email</label>
+                                <div class="col-sm-9">
+                                    <input type="email" class="form-control" id="email" placeholder="xxxxx@xx.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="col-sm-3 control-label">Phone</label>
+                                <div class="col-sm-9">
+                                    <input type="phone" class="form-control" id="phone" placeholder="12345678910">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-3 control-label">Message</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" name="message" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <!-- 联系表单结束 -->
             </div>
         </main>
+        <!-- main结束 -->
+        <!-- 页面信息 -->
+        <div class="text-center container-fluid page-msg">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>About This Page</h3>
+                    <p>
+                        Writen and coded by <a href="https://github.com/AKAGB">AKAGB</a>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Around The Web</h3>
+                    <a href="https://github.com/AKAGB"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://weibo.com/u/3300404521" target="_blank"><i class="fa fa-weibo fa-3x" aria-hidden="true"></i></a>
+                    <a href="mailto:gongqk@mail2.sysu.edu.cn" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <footer class="text-center">
+            <p>
+                AKAGB &copy 2018. All Rights Reversed
+            </p>
+        </footer>
     </body>
 </html>
