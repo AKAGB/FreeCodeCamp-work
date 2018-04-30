@@ -1,0 +1,25 @@
+.show {
+    margin: 15px;
+    height: 400px;
+    border: #ccc solid 1px;
+}
+
+.send {
+    width: 25%;
+    margin: auto;
+}
+
+.buttons {
+    width: 100%;
+}
+
+button {
+    width: 80%;
+}
+
+.btn-wrapper {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+}
