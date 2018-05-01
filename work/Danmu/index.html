@@ -5,12 +5,16 @@
         <title>Danmu</title>
         <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="core.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="show"></div>
-        <form class="send">
+        <div class="show">
+
+        </div>
+        <div class="send">
             <div class="form-group">
-                <input class="form-control" type="text" name="send_msg" placeholder="说点什么？">
+                <input class="form-control dm_string" type="text" name="send_msg" placeholder="说点什么？">
             </div>
             <div class="buttons text-center">
                 <div class="btn-wrapper">
@@ -20,6 +24,6 @@
                     <button class="btn btn-default dm_clear">清屏</button>
                 </div>
             </div>
-        </form>
+        </div>
     </body>
 </html>
