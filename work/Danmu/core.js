@@ -2,6 +2,8 @@ $(function () {
     var input = $('.dm_string');
     var fontColor = ['skyblue', '#aaa', '#faa'];
     var cnt = 0;
+    
+    // send danmu
     $('.dm_send').click(function () {
         if (input.val() != '') {
             var newEle = $('<div class="dm-text"></div>');
@@ -16,5 +18,10 @@ $(function () {
                     });
             cnt++;
         }
-    })
+    });
+
+    // clear danmu
+    $('.dm_clear').click(function () {
+        $('.dm-text').remove();
+    });
 });
