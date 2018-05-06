@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #ccc;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+i {
+    margin: 5px;
+}
+
+.quote-box {
+    width: 500px;
+    min-width: 500px;
+    padding: 40px 50px;
+    font-size: 1.75em;
+}
+
+.author {
+    font-size: 0.7em;
+}
+
+.new-quote {
+    margin-top: 30px;
+    float: right;
+}
+
+.new-quote:focus {
+    outline: none;
+}
