@@ -3,24 +3,69 @@
     <head>
         <meta charset="utf-8">
         <title>Local Weather</title>
+        <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="core.js"></script>
+        <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <a href="https://www.juhe.cn">
+            <a href="https://www.juhe.cn" title="聚合数据">
                 <img src="https://www.juhe.cn/themes/v5/public/images/loginlogo.png" alt="logo">
             </a>
             <h1>天气应用</h1>
         </header>
         <hr>
-        <main class="">
-            <div id="today-weather">
-                <h2>今天天气</h2>
-                <p class="ng-binding"></p>
+        <main class="container-fluid text-center">
+            <h2>今天天气</h2>
+            <div id="today-weather" class="panel weather-box text-left">
+                <p class="weather-items">城市：广州</p>
+                <p class="weather-items">日期：2014年03月21日</p>
+                <p class="weather-items">温度：8°</p>
+                <p class="weather-items">天气：晴转霾</p>
+                <p class="weather-items">穿衣指数：较冷</p>
+                <p class="weather-items">紫外线强度：中等</p>
+                <p class="weather-items">舒适度指数：</p>
+                <p class="weather-items">洗车指数：较适宜</p>
+                <p class="weather-items">旅游指数：适宜</p>
             </div>
             <hr>
+            <h2>未来6天天气</h2>
             <div id="others">
-                <h2>未来6天天气</h2>
                 <!-- Insert others -->
+                <div class="panel weather-box text-left">
+                    <p class="weather-items">日期：2014年03月21日</p>
+                    <p class="weather-items">温度：8°</p>
+                    <p class="weather-items">天气：晴转霾</p>
+                    <p class="weather-items">风向：东南风3-4级</p>
+                </div>
+                <div class="panel weather-box text-left">
+                    <p class="weather-items">日期：2014年03月21日</p>
+                    <p class="weather-items">温度：8°</p>
+                    <p class="weather-items">天气：晴转霾</p>
+                    <p class="weather-items">风向：东南风3-4级</p>
+                </div><div class="panel weather-box text-left">
+                    <p class="weather-items">日期：2014年03月21日</p>
+                    <p class="weather-items">温度：8°</p>
+                    <p class="weather-items">天气：晴转霾</p>
+                    <p class="weather-items">风向：东南风3-4级</p>
+                </div><div class="panel weather-box text-left">
+                    <p class="weather-items">日期：2014年03月21日</p>
+                    <p class="weather-items">温度：8°</p>
+                    <p class="weather-items">天气：晴转霾</p>
+                    <p class="weather-items">风向：东南风3-4级</p>
+                </div><div class="panel weather-box text-left">
+                    <p class="weather-items">日期：2014年03月21日</p>
+                    <p class="weather-items">温度：8°</p>
+                    <p class="weather-items">天气：晴转霾</p>
+                    <p class="weather-items">风向：东南风3-4级</p>
+                </div><div class="panel weather-box text-left">
+                    <p class="weather-items">日期：2014年03月21日</p>
+                    <p class="weather-items">温度：8°</p>
+                    <p class="weather-items">天气：晴转霾</p>
+                    <p class="weather-items">风向：东南风3-4级</p>
+                </div>
             </div>
         </main>
 
