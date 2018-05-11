@@ -32,13 +32,13 @@ $(function () {
 
     function setOthers(data) {
         var others = $('#others').children();
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 1; i < data.length; i++) {
             var j = 0;
             for (var each in _othWea) {
                 if (j !== 0) {
-                    others.eq(i).children().eq(j).html(_othWea[each]+'：'+data[i][each]);
+                    others.eq(i-1).children().eq(j).html(_othWea[each]+'：'+data[i][each]);
                 } else {
-                    others.eq(i).children().eq(j).html(_othWea[each]+'：' + 
+                    others.eq(i-1).children().eq(j).html(_othWea[each]+'：' + 
                             data[i][each].slice(0, 4) + '年' +
                             data[i][each].slice(4, 6) + '月' + 
                             data[i][each].slice(6) + '日');
