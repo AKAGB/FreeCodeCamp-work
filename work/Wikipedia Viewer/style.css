@@ -7,8 +7,23 @@
     --iconsize: 36px;
     --iconbarW: 16px;
     --iconbarH: 2px;
+    --textH: 50px;
     --iconColor: #D96F32;
     --inputW: 250px;
+    --bgclr: #092B40;
+}
+
+body {
+    background-color: var(--bgclr);
+    font-family: Consolas;
+}
+
+main {
+    width: 100%;
+    height: calc(var(--textH) * 2 + var(--iconsize)) ;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
 }
 
 .icon-search {
@@ -16,48 +31,61 @@
     height: var(--iconsize);
     border-radius: calc(var(--iconsize) / 2);
     border: 3px solid var(--iconColor);
-    position: absolute;
+    position: relative;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
 }
+
 .bar {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
     width: var(--iconbarW);
     height: var(--iconbarH);
-    position: absolute;
+    position: relative;
     top: 30px;
     left: 26px;
     background-color: var(--iconColor);
 }
 
-.parent {
-    width: var(--inputW);
-    height: var(--iconsize);
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
-    margin: auto;
-    border-radius: calc(var(--iconsize) / 2);
-    border: 3px solid var(--iconColor);
+.form-search, .rs-btn {
+    outline: none;
+    background: none;
+    border: 0;
 }
 
 .form-search {
     width: var(--inputW);
     height: calc(var(--iconsize) - 4px);
-    border: 0px;
-    outline: none;
-    background: none;
     padding-left: 4%;
     padding-right: 16%;
+    color: white;
 }
 
 .rs-btn {
-    outline: none;
-    background: none;
-    border: 0;
     position: absolute;
     right: 5%;
     top: 20%;
     color: var(--iconColor);
+}
+
+.labels {
+    width: 100%;
+    height: var(--textH);
+}
+
+.tips {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    line-height: var(--textH);
+}
+
+
+.tips:hover {
+    color: white;
+    text-decoration: none;
 }

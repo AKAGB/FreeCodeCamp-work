@@ -13,6 +13,5 @@ $(function () {
         $('.icon-search').animate({width: '36px'}, function() {
             $('.bar').fadeIn();
         });
-        
     });
 });
