@@ -74,7 +74,11 @@ main {
     height: var(--textH);
 }
 
-.tips {
+.tips,
+.tips:hover,
+.tips:active,
+.tips:visited,
+.tips:link {
     display: block;
     width: 100%;
     text-align: center;
@@ -82,10 +86,4 @@ main {
     text-decoration: none;
     font-size: 1.2em;
     line-height: var(--textH);
-}
-
-
-.tips:hover {
-    color: white;
-    text-decoration: none;
 }
