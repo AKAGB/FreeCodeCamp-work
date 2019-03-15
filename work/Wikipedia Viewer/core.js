@@ -26,6 +26,10 @@ $(function () {
                 success: function (data) {
                     pages = data['query']['pages'];
                     console.log(pages);
+                    $('#message').hide();
+                    $('main')
+                        // .css('height', '100%')
+                        .animate({'height': '100%'}, 1000, 'swing');
                 }
             })
             return false;
