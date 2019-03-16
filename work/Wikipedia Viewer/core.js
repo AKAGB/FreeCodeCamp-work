@@ -13,7 +13,7 @@ $(function () {
         $('.icon-search').animate({width: '36px'}, function() {
             $('.bar').fadeIn();
         });
-        $('#main').css({'height': 'calc(var(--textH) * 2 + var(--iconsize))'});
+        $('main').css({'height': 'calc(var(--textH) * 2 + var(--iconsize))'});
         $('.msg-container').html('');
         $('#message').fadeIn(500);
     });
@@ -22,6 +22,7 @@ $(function () {
         if (e.keyCode == 13) {
             // Search
             var str = $(this).val();
+            $('.msg-container').css({'transform': 'translateY(-30px)', 'opacity': '0'}).html('');
             $('#message').fadeOut(500);
             $('main').css({'height': '100%'});
             $.ajax({
@@ -46,5 +47,3 @@ $(function () {
         }
     });
 });
-
-// https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch=buffer&callback=JSON_CALLBACK
